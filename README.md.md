@@ -1,1 +1,0 @@
-This project is an unsophisticated neurl network. It's purpose is recognising numerical digits in images.

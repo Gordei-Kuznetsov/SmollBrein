@@ -1,0 +1,1 @@
+This project is an unsophisticated artificial neural network. Its purpose is recognising numerical digits in images.
