@@ -1,0 +1,5 @@
+-Made 5x5 grid for number selection
+-Implimented clickevents to change color and state (via array) of square clicked
+-That last one took a while because i don't know how to automate onclickevent process
+
+This is essentially everything needed for the input that will go to the retina layer
