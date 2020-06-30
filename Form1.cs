@@ -11,6 +11,9 @@ using System.Windows.Forms;
 //this was an edit i did from Visual studio code via github desktop, i just wanna see if it directly modifies the code or makes
 //another branch
 
+//huh, so for small changes, you can make them in VS code, and push them to master quickly
+//but for larger changes, and the ability to modify the actual form, clone it and use visual studio
+
 namespace SmollBrein
 {
     public partial class Form1 : Form
