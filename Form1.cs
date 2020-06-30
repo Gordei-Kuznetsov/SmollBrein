@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//this was an edit i did from Visual studio code via github desktop, i just wanna see if it directly modifies the code or makes
+//another branch
+
 namespace SmollBrein
 {
     public partial class Form1 : Form
