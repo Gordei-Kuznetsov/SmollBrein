@@ -14,6 +14,9 @@ using System.Windows.Forms;
 //huh, so for small changes, you can make them in VS code, and push them to master quickly
 //but for larger changes, and the ability to modify the actual form, clone it and use visual studio
 
+//okay so fun fact, github desktop can have local copies of master, which can be "pushed to origin" 
+//which ACTUALLY pushes it to the project
+
 namespace SmollBrein
 {
     public partial class Form1 : Form
