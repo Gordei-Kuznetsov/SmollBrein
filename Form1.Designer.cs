@@ -28,357 +28,471 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SelectionButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.SelectButton = new System.Windows.Forms.Button();
+            this.ret1 = new System.Windows.Forms.Button();
+            this.SelectionGroupBox = new System.Windows.Forms.GroupBox();
+            this.ret25 = new System.Windows.Forms.Button();
+            this.ret24 = new System.Windows.Forms.Button();
+            this.ret23 = new System.Windows.Forms.Button();
+            this.ret22 = new System.Windows.Forms.Button();
+            this.ret21 = new System.Windows.Forms.Button();
+            this.ret20 = new System.Windows.Forms.Button();
+            this.ret19 = new System.Windows.Forms.Button();
+            this.ret18 = new System.Windows.Forms.Button();
+            this.ret17 = new System.Windows.Forms.Button();
+            this.ret16 = new System.Windows.Forms.Button();
+            this.ret15 = new System.Windows.Forms.Button();
+            this.ret14 = new System.Windows.Forms.Button();
+            this.ret13 = new System.Windows.Forms.Button();
+            this.ret12 = new System.Windows.Forms.Button();
+            this.ret11 = new System.Windows.Forms.Button();
+            this.ret10 = new System.Windows.Forms.Button();
+            this.ret9 = new System.Windows.Forms.Button();
+            this.ret8 = new System.Windows.Forms.Button();
+            this.ret7 = new System.Windows.Forms.Button();
+            this.ret6 = new System.Windows.Forms.Button();
+            this.ret5 = new System.Windows.Forms.Button();
+            this.ret4 = new System.Windows.Forms.Button();
+            this.ret3 = new System.Windows.Forms.Button();
+            this.ret2 = new System.Windows.Forms.Button();
+            this.StartButton = new System.Windows.Forms.Button();
+            this.ResultGroupBox = new System.Windows.Forms.GroupBox();
+            this.ResultButton = new System.Windows.Forms.Button();
+            this.SelectionGroupBox.SuspendLayout();
+            this.ResultGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // SelectionButton
+            // SelectButton
             // 
-            this.SelectionButton.BackColor = System.Drawing.Color.Chartreuse;
-            this.SelectionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectionButton.Location = new System.Drawing.Point(1114, 276);
-            this.SelectionButton.Name = "SelectionButton";
-            this.SelectionButton.Size = new System.Drawing.Size(224, 77);
-            this.SelectionButton.TabIndex = 100;
-            this.SelectionButton.Text = "Select";
-            this.SelectionButton.UseVisualStyleBackColor = false;
-            this.SelectionButton.Click += new System.EventHandler(this.SelectionButton_Click);
+            this.SelectButton.BackColor = System.Drawing.Color.Chartreuse;
+            this.SelectButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectButton.Location = new System.Drawing.Point(844, 276);
+            this.SelectButton.Name = "SelectButton";
+            this.SelectButton.Size = new System.Drawing.Size(224, 77);
+            this.SelectButton.TabIndex = 100;
+            this.SelectButton.Text = "Select";
+            this.SelectButton.UseVisualStyleBackColor = false;
+            this.SelectButton.Click += new System.EventHandler(this.SelectionButton_Click);
             // 
-            // button1
+            // ret1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.Chartreuse;
-            this.button1.Location = new System.Drawing.Point(14, 21);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 40);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret1.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret1.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret1.FlatAppearance.BorderSize = 3;
+            this.ret1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret1.Location = new System.Drawing.Point(14, 21);
+            this.ret1.Name = "ret1";
+            this.ret1.Size = new System.Drawing.Size(40, 40);
+            this.ret1.TabIndex = 0;
+            this.ret1.UseVisualStyleBackColor = false;
+            this.ret1.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // groupBox1
+            // SelectionGroupBox
             // 
-            this.groupBox1.Controls.Add(this.button25);
-            this.groupBox1.Controls.Add(this.button24);
-            this.groupBox1.Controls.Add(this.button23);
-            this.groupBox1.Controls.Add(this.button22);
-            this.groupBox1.Controls.Add(this.button21);
-            this.groupBox1.Controls.Add(this.button20);
-            this.groupBox1.Controls.Add(this.button19);
-            this.groupBox1.Controls.Add(this.button18);
-            this.groupBox1.Controls.Add(this.button17);
-            this.groupBox1.Controls.Add(this.button16);
-            this.groupBox1.Controls.Add(this.button15);
-            this.groupBox1.Controls.Add(this.button14);
-            this.groupBox1.Controls.Add(this.button13);
-            this.groupBox1.Controls.Add(this.button12);
-            this.groupBox1.Controls.Add(this.button11);
-            this.groupBox1.Controls.Add(this.button10);
-            this.groupBox1.Controls.Add(this.button9);
-            this.groupBox1.Controls.Add(this.button8);
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.ForeColor = System.Drawing.Color.Chartreuse;
-            this.groupBox1.Location = new System.Drawing.Point(1100, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(252, 258);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Selection";
+            this.SelectionGroupBox.Controls.Add(this.ret25);
+            this.SelectionGroupBox.Controls.Add(this.ret24);
+            this.SelectionGroupBox.Controls.Add(this.ret23);
+            this.SelectionGroupBox.Controls.Add(this.ret22);
+            this.SelectionGroupBox.Controls.Add(this.ret21);
+            this.SelectionGroupBox.Controls.Add(this.ret20);
+            this.SelectionGroupBox.Controls.Add(this.ret19);
+            this.SelectionGroupBox.Controls.Add(this.ret18);
+            this.SelectionGroupBox.Controls.Add(this.ret17);
+            this.SelectionGroupBox.Controls.Add(this.ret16);
+            this.SelectionGroupBox.Controls.Add(this.ret15);
+            this.SelectionGroupBox.Controls.Add(this.ret14);
+            this.SelectionGroupBox.Controls.Add(this.ret13);
+            this.SelectionGroupBox.Controls.Add(this.ret12);
+            this.SelectionGroupBox.Controls.Add(this.ret11);
+            this.SelectionGroupBox.Controls.Add(this.ret10);
+            this.SelectionGroupBox.Controls.Add(this.ret9);
+            this.SelectionGroupBox.Controls.Add(this.ret8);
+            this.SelectionGroupBox.Controls.Add(this.ret7);
+            this.SelectionGroupBox.Controls.Add(this.ret6);
+            this.SelectionGroupBox.Controls.Add(this.ret5);
+            this.SelectionGroupBox.Controls.Add(this.ret4);
+            this.SelectionGroupBox.Controls.Add(this.ret3);
+            this.SelectionGroupBox.Controls.Add(this.ret2);
+            this.SelectionGroupBox.Controls.Add(this.ret1);
+            this.SelectionGroupBox.ForeColor = System.Drawing.Color.Chartreuse;
+            this.SelectionGroupBox.Location = new System.Drawing.Point(830, 12);
+            this.SelectionGroupBox.Name = "SelectionGroupBox";
+            this.SelectionGroupBox.Size = new System.Drawing.Size(252, 258);
+            this.SelectionGroupBox.TabIndex = 0;
+            this.SelectionGroupBox.TabStop = false;
+            this.SelectionGroupBox.Text = "Selection";
             // 
-            // button25
+            // ret25
             // 
-            this.button25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button25.BackColor = System.Drawing.Color.Chartreuse;
-            this.button25.Location = new System.Drawing.Point(198, 205);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(40, 40);
-            this.button25.TabIndex = 24;
-            this.button25.UseVisualStyleBackColor = false;
-            this.button25.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret25.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret25.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret25.FlatAppearance.BorderSize = 3;
+            this.ret25.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret25.Location = new System.Drawing.Point(198, 205);
+            this.ret25.Name = "ret25";
+            this.ret25.Size = new System.Drawing.Size(40, 40);
+            this.ret25.TabIndex = 24;
+            this.ret25.UseVisualStyleBackColor = false;
+            this.ret25.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button24
+            // ret24
             // 
-            this.button24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button24.BackColor = System.Drawing.Color.Chartreuse;
-            this.button24.Location = new System.Drawing.Point(152, 205);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(40, 40);
-            this.button24.TabIndex = 23;
-            this.button24.UseVisualStyleBackColor = false;
-            this.button24.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret24.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret24.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret24.FlatAppearance.BorderSize = 3;
+            this.ret24.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret24.Location = new System.Drawing.Point(152, 205);
+            this.ret24.Name = "ret24";
+            this.ret24.Size = new System.Drawing.Size(40, 40);
+            this.ret24.TabIndex = 23;
+            this.ret24.UseVisualStyleBackColor = false;
+            this.ret24.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button23
+            // ret23
             // 
-            this.button23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button23.BackColor = System.Drawing.Color.Chartreuse;
-            this.button23.Location = new System.Drawing.Point(106, 205);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(40, 40);
-            this.button23.TabIndex = 22;
-            this.button23.UseVisualStyleBackColor = false;
-            this.button23.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret23.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret23.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret23.FlatAppearance.BorderSize = 3;
+            this.ret23.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret23.Location = new System.Drawing.Point(106, 205);
+            this.ret23.Name = "ret23";
+            this.ret23.Size = new System.Drawing.Size(40, 40);
+            this.ret23.TabIndex = 22;
+            this.ret23.UseVisualStyleBackColor = false;
+            this.ret23.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button22
+            // ret22
             // 
-            this.button22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button22.BackColor = System.Drawing.Color.Chartreuse;
-            this.button22.Location = new System.Drawing.Point(60, 205);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(40, 40);
-            this.button22.TabIndex = 21;
-            this.button22.UseVisualStyleBackColor = false;
-            this.button22.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret22.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret22.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret22.FlatAppearance.BorderSize = 3;
+            this.ret22.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret22.Location = new System.Drawing.Point(60, 205);
+            this.ret22.Name = "ret22";
+            this.ret22.Size = new System.Drawing.Size(40, 40);
+            this.ret22.TabIndex = 21;
+            this.ret22.UseVisualStyleBackColor = false;
+            this.ret22.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button21
+            // ret21
             // 
-            this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button21.BackColor = System.Drawing.Color.Chartreuse;
-            this.button21.Location = new System.Drawing.Point(14, 205);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(40, 40);
-            this.button21.TabIndex = 20;
-            this.button21.UseVisualStyleBackColor = false;
-            this.button21.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret21.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret21.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret21.FlatAppearance.BorderSize = 3;
+            this.ret21.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret21.Location = new System.Drawing.Point(14, 205);
+            this.ret21.Name = "ret21";
+            this.ret21.Size = new System.Drawing.Size(40, 40);
+            this.ret21.TabIndex = 20;
+            this.ret21.UseVisualStyleBackColor = false;
+            this.ret21.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button20
+            // ret20
             // 
-            this.button20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button20.BackColor = System.Drawing.Color.Chartreuse;
-            this.button20.Location = new System.Drawing.Point(198, 159);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(40, 40);
-            this.button20.TabIndex = 19;
-            this.button20.UseVisualStyleBackColor = false;
-            this.button20.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret20.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret20.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret20.FlatAppearance.BorderSize = 3;
+            this.ret20.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret20.Location = new System.Drawing.Point(198, 159);
+            this.ret20.Name = "ret20";
+            this.ret20.Size = new System.Drawing.Size(40, 40);
+            this.ret20.TabIndex = 19;
+            this.ret20.UseVisualStyleBackColor = false;
+            this.ret20.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button19
+            // ret19
             // 
-            this.button19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button19.BackColor = System.Drawing.Color.Chartreuse;
-            this.button19.Location = new System.Drawing.Point(152, 159);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(40, 40);
-            this.button19.TabIndex = 18;
-            this.button19.UseVisualStyleBackColor = false;
-            this.button19.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret19.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret19.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret19.FlatAppearance.BorderSize = 3;
+            this.ret19.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret19.Location = new System.Drawing.Point(152, 159);
+            this.ret19.Name = "ret19";
+            this.ret19.Size = new System.Drawing.Size(40, 40);
+            this.ret19.TabIndex = 18;
+            this.ret19.UseVisualStyleBackColor = false;
+            this.ret19.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button18
+            // ret18
             // 
-            this.button18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button18.BackColor = System.Drawing.Color.Chartreuse;
-            this.button18.Location = new System.Drawing.Point(106, 159);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(40, 40);
-            this.button18.TabIndex = 17;
-            this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret18.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret18.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret18.FlatAppearance.BorderSize = 3;
+            this.ret18.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret18.Location = new System.Drawing.Point(106, 159);
+            this.ret18.Name = "ret18";
+            this.ret18.Size = new System.Drawing.Size(40, 40);
+            this.ret18.TabIndex = 17;
+            this.ret18.UseVisualStyleBackColor = false;
+            this.ret18.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button17
+            // ret17
             // 
-            this.button17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button17.BackColor = System.Drawing.Color.Chartreuse;
-            this.button17.Location = new System.Drawing.Point(60, 159);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(40, 40);
-            this.button17.TabIndex = 16;
-            this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret17.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret17.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret17.FlatAppearance.BorderSize = 3;
+            this.ret17.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret17.Location = new System.Drawing.Point(60, 159);
+            this.ret17.Name = "ret17";
+            this.ret17.Size = new System.Drawing.Size(40, 40);
+            this.ret17.TabIndex = 16;
+            this.ret17.UseVisualStyleBackColor = false;
+            this.ret17.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button16
+            // ret16
             // 
-            this.button16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button16.BackColor = System.Drawing.Color.Chartreuse;
-            this.button16.Location = new System.Drawing.Point(14, 159);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(40, 40);
-            this.button16.TabIndex = 15;
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret16.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret16.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret16.FlatAppearance.BorderSize = 3;
+            this.ret16.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret16.Location = new System.Drawing.Point(14, 159);
+            this.ret16.Name = "ret16";
+            this.ret16.Size = new System.Drawing.Size(40, 40);
+            this.ret16.TabIndex = 15;
+            this.ret16.UseVisualStyleBackColor = false;
+            this.ret16.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button15
+            // ret15
             // 
-            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button15.BackColor = System.Drawing.Color.Chartreuse;
-            this.button15.Location = new System.Drawing.Point(198, 113);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(40, 40);
-            this.button15.TabIndex = 14;
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret15.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret15.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret15.FlatAppearance.BorderSize = 3;
+            this.ret15.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret15.Location = new System.Drawing.Point(198, 113);
+            this.ret15.Name = "ret15";
+            this.ret15.Size = new System.Drawing.Size(40, 40);
+            this.ret15.TabIndex = 14;
+            this.ret15.UseVisualStyleBackColor = false;
+            this.ret15.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button14
+            // ret14
             // 
-            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button14.BackColor = System.Drawing.Color.Chartreuse;
-            this.button14.Location = new System.Drawing.Point(152, 113);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(40, 40);
-            this.button14.TabIndex = 13;
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret14.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret14.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret14.FlatAppearance.BorderSize = 3;
+            this.ret14.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret14.Location = new System.Drawing.Point(152, 113);
+            this.ret14.Name = "ret14";
+            this.ret14.Size = new System.Drawing.Size(40, 40);
+            this.ret14.TabIndex = 13;
+            this.ret14.UseVisualStyleBackColor = false;
+            this.ret14.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button13
+            // ret13
             // 
-            this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button13.BackColor = System.Drawing.Color.Chartreuse;
-            this.button13.Location = new System.Drawing.Point(106, 113);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(40, 40);
-            this.button13.TabIndex = 12;
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret13.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret13.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret13.FlatAppearance.BorderSize = 3;
+            this.ret13.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret13.Location = new System.Drawing.Point(106, 113);
+            this.ret13.Name = "ret13";
+            this.ret13.Size = new System.Drawing.Size(40, 40);
+            this.ret13.TabIndex = 12;
+            this.ret13.UseVisualStyleBackColor = false;
+            this.ret13.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button12
+            // ret12
             // 
-            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button12.BackColor = System.Drawing.Color.Chartreuse;
-            this.button12.Location = new System.Drawing.Point(60, 113);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(40, 40);
-            this.button12.TabIndex = 11;
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret12.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret12.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret12.FlatAppearance.BorderSize = 3;
+            this.ret12.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret12.Location = new System.Drawing.Point(60, 113);
+            this.ret12.Name = "ret12";
+            this.ret12.Size = new System.Drawing.Size(40, 40);
+            this.ret12.TabIndex = 11;
+            this.ret12.UseVisualStyleBackColor = false;
+            this.ret12.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button11
+            // ret11
             // 
-            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button11.BackColor = System.Drawing.Color.Chartreuse;
-            this.button11.Location = new System.Drawing.Point(14, 113);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(40, 40);
-            this.button11.TabIndex = 10;
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret11.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret11.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret11.FlatAppearance.BorderSize = 3;
+            this.ret11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret11.Location = new System.Drawing.Point(14, 113);
+            this.ret11.Name = "ret11";
+            this.ret11.Size = new System.Drawing.Size(40, 40);
+            this.ret11.TabIndex = 10;
+            this.ret11.UseVisualStyleBackColor = false;
+            this.ret11.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button10
+            // ret10
             // 
-            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button10.BackColor = System.Drawing.Color.Chartreuse;
-            this.button10.Location = new System.Drawing.Point(198, 67);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(40, 40);
-            this.button10.TabIndex = 9;
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret10.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret10.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret10.FlatAppearance.BorderSize = 3;
+            this.ret10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret10.Location = new System.Drawing.Point(198, 67);
+            this.ret10.Name = "ret10";
+            this.ret10.Size = new System.Drawing.Size(40, 40);
+            this.ret10.TabIndex = 9;
+            this.ret10.UseVisualStyleBackColor = false;
+            this.ret10.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button9
+            // ret9
             // 
-            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button9.BackColor = System.Drawing.Color.Chartreuse;
-            this.button9.Location = new System.Drawing.Point(152, 67);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(40, 40);
-            this.button9.TabIndex = 8;
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret9.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret9.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret9.FlatAppearance.BorderSize = 3;
+            this.ret9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret9.Location = new System.Drawing.Point(152, 67);
+            this.ret9.Name = "ret9";
+            this.ret9.Size = new System.Drawing.Size(40, 40);
+            this.ret9.TabIndex = 8;
+            this.ret9.UseVisualStyleBackColor = false;
+            this.ret9.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button8
+            // ret8
             // 
-            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button8.BackColor = System.Drawing.Color.Chartreuse;
-            this.button8.Location = new System.Drawing.Point(106, 67);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(40, 40);
-            this.button8.TabIndex = 7;
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret8.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret8.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret8.FlatAppearance.BorderSize = 3;
+            this.ret8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret8.Location = new System.Drawing.Point(106, 67);
+            this.ret8.Name = "ret8";
+            this.ret8.Size = new System.Drawing.Size(40, 40);
+            this.ret8.TabIndex = 7;
+            this.ret8.UseVisualStyleBackColor = false;
+            this.ret8.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button7
+            // ret7
             // 
-            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.BackColor = System.Drawing.Color.Chartreuse;
-            this.button7.Location = new System.Drawing.Point(60, 67);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(40, 40);
-            this.button7.TabIndex = 6;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret7.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret7.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret7.FlatAppearance.BorderSize = 3;
+            this.ret7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret7.Location = new System.Drawing.Point(60, 67);
+            this.ret7.Name = "ret7";
+            this.ret7.Size = new System.Drawing.Size(40, 40);
+            this.ret7.TabIndex = 6;
+            this.ret7.UseVisualStyleBackColor = false;
+            this.ret7.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button6
+            // ret6
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.BackColor = System.Drawing.Color.Chartreuse;
-            this.button6.Location = new System.Drawing.Point(14, 67);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(40, 40);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret6.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret6.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret6.FlatAppearance.BorderSize = 3;
+            this.ret6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret6.Location = new System.Drawing.Point(14, 67);
+            this.ret6.Name = "ret6";
+            this.ret6.Size = new System.Drawing.Size(40, 40);
+            this.ret6.TabIndex = 5;
+            this.ret6.UseVisualStyleBackColor = false;
+            this.ret6.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button5
+            // ret5
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.BackColor = System.Drawing.Color.Chartreuse;
-            this.button5.Location = new System.Drawing.Point(198, 21);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(40, 40);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret5.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret5.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret5.FlatAppearance.BorderSize = 3;
+            this.ret5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret5.Location = new System.Drawing.Point(198, 21);
+            this.ret5.Name = "ret5";
+            this.ret5.Size = new System.Drawing.Size(40, 40);
+            this.ret5.TabIndex = 4;
+            this.ret5.UseVisualStyleBackColor = false;
+            this.ret5.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button4
+            // ret4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.Chartreuse;
-            this.button4.Location = new System.Drawing.Point(152, 21);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(40, 40);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret4.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret4.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret4.FlatAppearance.BorderSize = 3;
+            this.ret4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret4.Location = new System.Drawing.Point(152, 21);
+            this.ret4.Name = "ret4";
+            this.ret4.Size = new System.Drawing.Size(40, 40);
+            this.ret4.TabIndex = 3;
+            this.ret4.UseVisualStyleBackColor = false;
+            this.ret4.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button3
+            // ret3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.Chartreuse;
-            this.button3.Location = new System.Drawing.Point(106, 21);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(40, 40);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret3.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret3.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret3.FlatAppearance.BorderSize = 3;
+            this.ret3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret3.Location = new System.Drawing.Point(106, 21);
+            this.ret3.Name = "ret3";
+            this.ret3.Size = new System.Drawing.Size(40, 40);
+            this.ret3.TabIndex = 2;
+            this.ret3.UseVisualStyleBackColor = false;
+            this.ret3.Click += new System.EventHandler(this.AnyButton_Click);
             // 
-            // button2
+            // ret2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.Chartreuse;
-            this.button2.Location = new System.Drawing.Point(60, 21);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(40, 40);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.AnyButton_Click);
+            this.ret2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ret2.BackColor = System.Drawing.Color.Chartreuse;
+            this.ret2.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.ret2.FlatAppearance.BorderSize = 3;
+            this.ret2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Chartreuse;
+            this.ret2.Location = new System.Drawing.Point(60, 21);
+            this.ret2.Name = "ret2";
+            this.ret2.Size = new System.Drawing.Size(40, 40);
+            this.ret2.TabIndex = 1;
+            this.ret2.UseVisualStyleBackColor = false;
+            this.ret2.Click += new System.EventHandler(this.AnyButton_Click);
+            // 
+            // StartButton
+            // 
+            this.StartButton.BackColor = System.Drawing.Color.Chartreuse;
+            this.StartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartButton.Location = new System.Drawing.Point(1114, 276);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.Size = new System.Drawing.Size(224, 77);
+            this.StartButton.TabIndex = 100;
+            this.StartButton.Text = "Start";
+            this.StartButton.UseVisualStyleBackColor = false;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
+            // 
+            // ResultGroupBox
+            // 
+            this.ResultGroupBox.Controls.Add(this.ResultButton);
+            this.ResultGroupBox.ForeColor = System.Drawing.Color.Chartreuse;
+            this.ResultGroupBox.Location = new System.Drawing.Point(1099, 12);
+            this.ResultGroupBox.Name = "ResultGroupBox";
+            this.ResultGroupBox.Size = new System.Drawing.Size(252, 258);
+            this.ResultGroupBox.TabIndex = 101;
+            this.ResultGroupBox.TabStop = false;
+            this.ResultGroupBox.Text = "Result";
+            // 
+            // ResultButton
+            // 
+            this.ResultButton.BackColor = System.Drawing.Color.Black;
+            this.ResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ResultButton.Font = new System.Drawing.Font("Arial", 100.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResultButton.Location = new System.Drawing.Point(15, 21);
+            this.ResultButton.Name = "ResultButton";
+            this.ResultButton.Size = new System.Drawing.Size(224, 224);
+            this.ResultButton.TabIndex = 102;
+            this.ResultButton.Text = "7";
+            this.ResultButton.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -386,43 +500,49 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1364, 708);
-            this.Controls.Add(this.SelectionButton);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.ResultGroupBox);
+            this.Controls.Add(this.StartButton);
+            this.Controls.Add(this.SelectButton);
+            this.Controls.Add(this.SelectionGroupBox);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
+            this.SelectionGroupBox.ResumeLayout(false);
+            this.ResultGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button SelectionButton;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button SelectButton;
+        private System.Windows.Forms.Button ret1;
+        private System.Windows.Forms.GroupBox SelectionGroupBox;
+        private System.Windows.Forms.Button ret25;
+        private System.Windows.Forms.Button ret24;
+        private System.Windows.Forms.Button ret23;
+        private System.Windows.Forms.Button ret22;
+        private System.Windows.Forms.Button ret21;
+        private System.Windows.Forms.Button ret20;
+        private System.Windows.Forms.Button ret19;
+        private System.Windows.Forms.Button ret18;
+        private System.Windows.Forms.Button ret17;
+        private System.Windows.Forms.Button ret16;
+        private System.Windows.Forms.Button ret15;
+        private System.Windows.Forms.Button ret14;
+        private System.Windows.Forms.Button ret13;
+        private System.Windows.Forms.Button ret12;
+        private System.Windows.Forms.Button ret11;
+        private System.Windows.Forms.Button ret10;
+        private System.Windows.Forms.Button ret9;
+        private System.Windows.Forms.Button ret8;
+        private System.Windows.Forms.Button ret7;
+        private System.Windows.Forms.Button ret6;
+        private System.Windows.Forms.Button ret5;
+        private System.Windows.Forms.Button ret4;
+        private System.Windows.Forms.Button ret3;
+        private System.Windows.Forms.Button ret2;
+        private System.Windows.Forms.Button StartButton;
+        private System.Windows.Forms.GroupBox ResultGroupBox;
+        private System.Windows.Forms.Button ResultButton;
     }
 }
 

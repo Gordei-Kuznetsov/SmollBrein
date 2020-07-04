@@ -24,12 +24,20 @@ namespace SmollBrein
         public Form1()
         {
             InitializeComponent();
-            buttons = new Button[25] { button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11, button12, button13, button14, button15, button16, button17, button18, button19, button20, button21, button22, button23, button24, button25, };
+            buttons = new Button[25] { ret1, ret2, ret3, ret4, ret5, ret6, ret7, ret8, ret9, ret10, ret11, ret12, ret13, ret14, ret15, ret16, ret17, ret18, ret19, ret20, ret21, ret22, ret23, ret24, ret25, };
         }
         public Button[] buttons;
         public bool[] mainArray = new bool[25];
-        private Color TrueButton = Color.Black;
-        private Color FalseButton = Color.Chartreuse;
+        private readonly Color TrueButton = Color.Black;
+        private readonly Color FalseButton = Color.Chartreuse;
+
+        private void StartButton_Click(object sender, EventArgs e)
+        {
+            //disables selection area
+            //Starts the proccess
+            //feeds the input into the first layer of Neurons
+            //when proccess finishes, displays enables the selection area
+        }
 
         private void SelectionButton_Click(object sender, EventArgs e)
         {
@@ -38,8 +46,9 @@ namespace SmollBrein
             //however it will be compensated for in the cleanup stage
 
             //taking the first row
-            
+
         }
+
         private void AnyButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
