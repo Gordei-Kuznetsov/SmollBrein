@@ -10,59 +10,55 @@ namespace SmollBrein
 {
     class Neuron
     {
-        public Neuron(Form1 form1)
-        {
-            form1.Controls.Add(this.NeuronDot);
-        }
         private bool state = false;
-        private Neuron[] InputConnections;
-        private Neuron[] OutputConnections;
+        private Neuron[] InputConnections = null;
+        private Neuron[] OutputConnections = null;
         private readonly Color TrueNeuron = Color.Chartreuse;
         private readonly Color FalseNeuron = Color.Black;
         public PictureBox NeuronDot = new PictureBox();
-        public void SetConnections(int NeuronDot_X_Position, int NeuronDot_Y_Position, Neuron[] InputConnections = null, Neuron[] OutputConnections = null)
+        public void SetConnections(Neuron[] InputConnections, Neuron[] OutputConnections, int NeuronDot_X_Position, int NeuronDot_Y_Position, Form1 form1)
         {
             this.InputConnections = InputConnections;
             this.OutputConnections = OutputConnections;
-            NeuronDot.BackColor = FalseNeuron;
             NeuronDot.SetBounds(NeuronDot_X_Position, NeuronDot_Y_Position, 20, 20);
+            NeuronDot.BackColor = FalseNeuron;
             NeuronDot.BorderStyle = BorderStyle.FixedSingle;
             NeuronDot.Enabled = true;
             NeuronDot.Visible = true;
+            form1.Controls.Add(this.NeuronDot);
         }
         public void CheckInputs()
         {
             foreach (Neuron neuron in InputConnections)
             {
-                if (neuron.state)
-                {
-                    if (InputConnections[InputConnections.Length - 1] == neuron)
-                    {
-                        SetState(true);
-                        NeuronDot.BackColor = TrueNeuron;
-                    }
-                }
-                else
+                if (!neuron.state)
                 {
                     SetState(false);
                     break;
+                }
+                if (InputConnections.Last() == neuron)
+                {
+                    SetState(true);
                 }
             }
         }
         public void SetState(bool State)
         {
-            this.state = State;
-            if (State)
+            state = State;
+            if (!State)
             {
-                NeuronDot.BackColor = TrueNeuron;
-                foreach (Neuron neuron in OutputConnections)
-                {
-                    neuron.CheckInputs();
-                }
+                NeuronDot.BackColor = FalseNeuron;
             }
             else
             {
-                NeuronDot.BackColor = FalseNeuron;
+                NeuronDot.BackColor = TrueNeuron;
+                if (!(OutputConnections == null))
+                {
+                    foreach (Neuron neuron in OutputConnections)
+                    {
+                        neuron.CheckInputs();
+                    }
+                }
             }
         }
     }

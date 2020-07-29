@@ -8,14 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//this was an edit i did from Visual studio code via github desktop, i just wanna see if it directly modifies the code or makes
-//another branch
-
-//huh, so for small changes, you can make them in VS code, and push them to master quickly
-//but for larger changes, and the ability to modify the actual form, clone it and use visual studio
-
-//okay so fun fact, github desktop can have local copies of master, which can be "pushed to origin" 
-//which ACTUALLY pushes it to the project
 
 namespace SmollBrein
 {
@@ -24,45 +16,112 @@ namespace SmollBrein
         public Form1()
         {
             InitializeComponent();
-            buttons = new Button[25] { ret1, ret2, ret3, ret4, ret5, ret6, ret7, ret8, ret9, ret10, ret11, ret12, ret13, ret14, ret15, ret16, ret17, ret18, ret19, ret20, ret21, ret22, ret23, ret24, ret25, };
+            ArrangeInputButtons(5, 5, 5);
+            if (InitializeAllNeurons())
+            {
+                Exception exception = SetConnectionsForAll();
+                if (exception != null)
+                {
+                    MessageBox.Show("Setting connections for the neurons had failed.\nMessage:\n" + exception.Message);
+                }
+            }
         }
-        public Button[] buttons;
-        public bool[] mainArray = new bool[25];
-        private readonly Color TrueButton = Color.Black;
-        private readonly Color FalseButton = Color.Chartreuse;
+        private InputButton[,] InputButtonsArray = new InputButton[5, 5];
+
+        private void ArrangeInputButtons(int HorizontalNum, int VerticalNum, int Margin)
+        {
+            int X = 10, Y = 20;
+            for (int Yindex = 0; Yindex < VerticalNum; Yindex++)
+            {
+                for (int Xindex = 0; Xindex < HorizontalNum; Xindex++)
+                {
+                    InputButton inputButton = new InputButton(X, Y);
+                    InputButtonsArray[Xindex, Yindex] = inputButton;
+                    SelectionGroupBox.Controls.Add(inputButton);
+                    X += 30 + Margin;
+                }
+                X = 10;
+                Y += 30 + Margin;
+            }
+        }
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            //disables selection area
-            //Starts the proccess
-            //feeds the input into the first layer of Neurons
-            //when proccess finishes, displays enables the selection area
+            SelectButton.Enabled = false;
+            if (FeedInput())
+            {
+                foreach (InputButton inputButton in InputButtonsArray)
+                {
+                    inputButton.SetState(false);
+                    inputButton.Enabled = true;
+                }
+            }
+            SelectButton.Enabled = true;
         }
 
-        private void SelectionButton_Click(object sender, EventArgs e)
+        private void SelectButton_Click(object sender, EventArgs e)
         {
-            //taking and cleaning input
-            //!note that the order of the buttons are reversed after the first row, this is due to copy/pasting issues, 
-            //however it will be compensated for in the cleanup stage
-
-            //taking the first row
-
+            StartButton.Enabled = !StartButton.Enabled;
+            foreach (InputButton inputButton in InputButtonsArray)
+            {
+                inputButton.Enabled = !inputButton.Enabled;
+            }
         }
 
-        private void AnyButton_Click(object sender, EventArgs e)
+
+        Neuron[] Rneuorns = new Neuron[25];
+        Neuron[] V1neurons = new Neuron[30];
+        Neuron[] V2neurons = new Neuron[40];
+        Neuron[] ITneurons = new Neuron[10];
+
+        private bool InitializeAllNeurons()
         {
-            Button button = (Button)sender;
-            int index = Array.IndexOf(buttons, button);
-            if (!mainArray[index])
+            for(int i = 0; i < 25; i++)
             {
-                mainArray[index] = true;
-                button.BackColor = TrueButton;
+                Neuron Rneuron = new Neuron();
+                Rneuorns[i] = Rneuron;
             }
-            else
+            for (int i = 0; i < 30; i++)
             {
-                mainArray[index] = false;
-                button.BackColor = FalseButton;
+                Neuron V1neuron = new Neuron();
+                V1neurons[i] = V1neuron;
             }
+            for (int i = 0; i < 40; i++)
+            {
+                Neuron V2neuron = new Neuron();
+                V2neurons[i] = V2neuron;
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                Neuron ITneuron = new Neuron();
+                ITneurons[i] = ITneuron;
+            }
+            return true;
+        }
+        private bool FeedInput()
+        {
+            int counter = 0;
+            foreach (InputButton inputButton in InputButtonsArray)
+            {
+                Rneuorns[counter].SetState(inputButton.state);
+                counter++;
+            }
+            return true;
+        }
+
+        private Exception SetConnectionsForAll()
+        {
+            Exception exception = null;
+            try
+            {
+                int a = 0;
+                int b = 1 / a;
+            }
+            catch (Exception error)
+            {
+                exception = error;
+            }
+            return exception;
         }
     }
 }
