@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.SelectButton = new System.Windows.Forms.Button();
             this.SelectionGroupBox = new System.Windows.Forms.GroupBox();
             this.ResultGroupBox = new System.Windows.Forms.GroupBox();
             this.ResultButton = new System.Windows.Forms.Button();
             this.StartButton = new System.Windows.Forms.Button();
+            this.InnerW = new System.Windows.Forms.GroupBox();
             this.ResultGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,10 +42,10 @@
             // 
             this.SelectButton.BackColor = System.Drawing.Color.Chartreuse;
             this.SelectButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectButton.Location = new System.Drawing.Point(633, 224);
-            this.SelectButton.Margin = new System.Windows.Forms.Padding(2);
+            this.SelectButton.Location = new System.Drawing.Point(1325, 292);
+            this.SelectButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SelectButton.Name = "SelectButton";
-            this.SelectButton.Size = new System.Drawing.Size(168, 63);
+            this.SelectButton.Size = new System.Drawing.Size(224, 78);
             this.SelectButton.TabIndex = 100;
             this.SelectButton.Text = "Select";
             this.SelectButton.UseVisualStyleBackColor = false;
@@ -52,11 +54,11 @@
             // SelectionGroupBox
             // 
             this.SelectionGroupBox.ForeColor = System.Drawing.Color.Chartreuse;
-            this.SelectionGroupBox.Location = new System.Drawing.Point(622, 10);
-            this.SelectionGroupBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SelectionGroupBox.Location = new System.Drawing.Point(1309, 28);
+            this.SelectionGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SelectionGroupBox.Name = "SelectionGroupBox";
-            this.SelectionGroupBox.Padding = new System.Windows.Forms.Padding(2);
-            this.SelectionGroupBox.Size = new System.Drawing.Size(189, 288);
+            this.SelectionGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SelectionGroupBox.Size = new System.Drawing.Size(252, 354);
             this.SelectionGroupBox.TabIndex = 0;
             this.SelectionGroupBox.TabStop = false;
             this.SelectionGroupBox.Text = "Selection";
@@ -65,11 +67,11 @@
             // 
             this.ResultGroupBox.Controls.Add(this.ResultButton);
             this.ResultGroupBox.ForeColor = System.Drawing.Color.Chartreuse;
-            this.ResultGroupBox.Location = new System.Drawing.Point(824, 10);
-            this.ResultGroupBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ResultGroupBox.Location = new System.Drawing.Point(1309, 415);
+            this.ResultGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ResultGroupBox.Name = "ResultGroupBox";
-            this.ResultGroupBox.Padding = new System.Windows.Forms.Padding(2);
-            this.ResultGroupBox.Size = new System.Drawing.Size(189, 288);
+            this.ResultGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ResultGroupBox.Size = new System.Drawing.Size(252, 354);
             this.ResultGroupBox.TabIndex = 101;
             this.ResultGroupBox.TabStop = false;
             this.ResultGroupBox.Text = "Result";
@@ -79,10 +81,10 @@
             this.ResultButton.BackColor = System.Drawing.Color.Black;
             this.ResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ResultButton.Font = new System.Drawing.Font("Arial", 100.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultButton.Location = new System.Drawing.Point(11, 17);
-            this.ResultButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ResultButton.Location = new System.Drawing.Point(15, 21);
+            this.ResultButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ResultButton.Name = "ResultButton";
-            this.ResultButton.Size = new System.Drawing.Size(168, 182);
+            this.ResultButton.Size = new System.Drawing.Size(224, 224);
             this.ResultButton.TabIndex = 102;
             this.ResultButton.UseVisualStyleBackColor = false;
             // 
@@ -91,26 +93,41 @@
             this.StartButton.BackColor = System.Drawing.Color.Chartreuse;
             this.StartButton.Enabled = false;
             this.StartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StartButton.Location = new System.Drawing.Point(835, 224);
-            this.StartButton.Margin = new System.Windows.Forms.Padding(2);
+            this.StartButton.Location = new System.Drawing.Point(1324, 679);
+            this.StartButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(168, 63);
+            this.StartButton.Size = new System.Drawing.Size(224, 78);
             this.StartButton.TabIndex = 102;
             this.StartButton.Text = "Start";
             this.StartButton.UseVisualStyleBackColor = false;
             this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
+            // InnerW
+            // 
+            this.InnerW.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("InnerW.BackgroundImage")));
+            this.InnerW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.InnerW.ForeColor = System.Drawing.Color.Chartreuse;
+            this.InnerW.Location = new System.Drawing.Point(61, 46);
+            this.InnerW.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.InnerW.Name = "InnerW";
+            this.InnerW.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.InnerW.Size = new System.Drawing.Size(1004, 793);
+            this.InnerW.TabIndex = 103;
+            this.InnerW.TabStop = false;
+            this.InnerW.Text = "Inner working";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1023, 575);
+            this.ClientSize = new System.Drawing.Size(1603, 942);
+            this.Controls.Add(this.InnerW);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.ResultGroupBox);
             this.Controls.Add(this.SelectButton);
             this.Controls.Add(this.SelectionGroupBox);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResultGroupBox.ResumeLayout(false);
@@ -124,6 +141,7 @@
         private System.Windows.Forms.GroupBox ResultGroupBox;
         private System.Windows.Forms.Button ResultButton;
         private System.Windows.Forms.Button StartButton;
+        public System.Windows.Forms.GroupBox InnerW;
     }
 }
 
