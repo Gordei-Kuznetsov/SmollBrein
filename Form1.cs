@@ -16,33 +16,34 @@ namespace SmollBrein
         public Form1()
         {
             InitializeComponent();
-            ArrangeInputButtons(3, 5, 5);
-            InitializeAllNeurons();
-            SetConnectionsForAll();
+            ArrangeInputButtons(3, 5, 5);   //arranges the inputbuttons in a grid of 3 by 5 with a margin of 5px
+            InitializeAllNeurons();         //intializes all neurons of the network
+            SetConnectionsForAll();         //sets the input and output connections for the neurons
         }
-        private InputButton[,] InputButtonsArray = new InputButton[3, 5];
+        private InputButton[,] InputButtonsArray = new InputButton[3, 5];   //two-dimentional array containing all inputbuttons
 
-        private void ArrangeInputButtons(int HorizontalNum, int VerticalNum, int Margin)
+        private void ArrangeInputButtons(int HorizontalNum, int VerticalNum, int Margin) //arranges the inputbuttons in a grid with specified width, height, and margin
         {
-            int X = 40, Y = 20;
-            for (int Yindex = 0; Yindex < VerticalNum; Yindex++)
+            int X = 40, Y = 20;                                         //initial positions (top-left corner)
+            for (int Yindex = 0; Yindex < VerticalNum; Yindex++)        //the loop iterates through every row of buttons
             {
-                for (int Xindex = 0; Xindex < HorizontalNum; Xindex++)
+                for (int Xindex = 0; Xindex < HorizontalNum; Xindex++)  //the nested loop iterates through every column within a row of buttons
                 {
-                    InputButton inputButton = new InputButton(X, Y);
-                    InputButtonsArray[Xindex, Yindex] = inputButton;
-                    SelectionGroupBox.Controls.Add(inputButton);
-                    X += 30 + Margin;
+                    InputButton inputButton = new InputButton(X, Y);    //initializes new button
+                    InputButtonsArray[Xindex, Yindex] = inputButton;    //assignes it to the appropriate index in the array
+                    SelectionGroupBox.Controls.Add(inputButton);        //adds it to the groupbox on the main form
+                    X += 30 + Margin;                                   //increments the x coordinate for the next button in the row
                 }
-                X = 40;
-                Y += 30 + Margin;
+                X = 40;                                                 //resets the initial x coordinate for the next row
+                Y += 30 + Margin;                                       //increments the y coordinate for the next column
             }
         }
 
         private void StartButton_Click(object sender, EventArgs e)
         {
-            SelectButton.Enabled = false;
-            ResultButton.Text = "";
+            SelectButton.Enabled = false;                   //diavles the selectbutton
+            ResultButton.Text = "";                         //cleares the result area
+            //diactivates all neurons in the network
             foreach (Neuron neuron in Rneurons)
             {
                 neuron.SetState(false);
@@ -63,12 +64,12 @@ namespace SmollBrein
             {
                 neuron.SetState(false);
             }
-            if (FeedInput())
+            if (FeedInput())                        //feeds the values from the input into the first layer of the network
             {
                 foreach (InputButton inputButton in InputButtonsArray)
                 {
-                    inputButton.SetState(false);
-                    inputButton.Enabled = true;
+                    inputButton.SetState(false);    //diactivates the button
+                    inputButton.Enabled = true;     //enables the button
                 }
             }
             SelectButton.Enabled = true;
@@ -77,20 +78,20 @@ namespace SmollBrein
 
         private void SelectButton_Click(object sender, EventArgs e)
         {
-            StartButton.Enabled = !StartButton.Enabled;
+            StartButton.Enabled = !StartButton.Enabled;             //switches between enabled/disabled
             foreach (InputButton inputButton in InputButtonsArray)
             {
-                inputButton.Enabled = !inputButton.Enabled;
+                inputButton.Enabled = !inputButton.Enabled;         //enables/diasbles the inputbuttons
             }
         }
 
-        Neuron[] Rneurons = new Neuron[16];
-        Neuron[] V1neurons = new Neuron[10];
-        Neuron[] V2neurons = new Neuron[11];
-        Neuron[] V3neurons = new Neuron[11];
-        Neuron[] ITneurons = new Neuron[10];
+        Neuron[] Rneurons = new Neuron[16];                 //all neurons in the retina layer
+        Neuron[] V1neurons = new Neuron[10];                //all neurons in the V1 layer
+        Neuron[] V2neurons = new Neuron[11];                //all neurons in the V2 layer
+        Neuron[] V3neurons = new Neuron[11];                //all neurons in the V3 layer
+        Neuron[] ITneurons = new Neuron[10];                //all neurons in the IT layer
 
-        private void InitializeAllNeurons()
+        private void InitializeAllNeurons()                 //intializes all neurons of the network
         {
             for(int i = 0; i < 16; i++)
             {
@@ -118,22 +119,22 @@ namespace SmollBrein
                 ITneurons[i] = ITneuron;
             }
         }
-        public void DisplayResult(Neuron neuron)
+        public void DisplayResult(Neuron neuron)            //reads and displays the outcomes of the network's activity
         {
-            int index = Array.IndexOf(ITneurons, neuron);
-            if (index != -1)
+            int index = Array.IndexOf(ITneurons, neuron);   //get the index of the passed neuron in the IT array
+            if (index != -1)                                //if it was in the array, that is the neuron is an IT neuron
             {
-                ResultButton.Text = index.ToString();
+                ResultButton.Text = index.ToString();       //displays the index of the neuron in the array (the index represents the number which the neurons checks for)
             }
         }
-        private bool FeedInput()
+        private bool FeedInput()                            //feeds the values from the input into the first layer of the network
         {
             int counter = 1;
-            for (int Yindex = 0; Yindex < 5; Yindex++)
+            for (int Yindex = 0; Yindex < 5; Yindex++)      //iterates through the two-dimentional array of the inputbuttons
             {
                 for (int Xindex = 0; Xindex < 3; Xindex++)
                 {
-                    Rneurons[counter].SetState(InputButtonsArray[Xindex, Yindex].state);
+                    Rneurons[counter].SetState(InputButtonsArray[Xindex, Yindex].state);    //gets the state of the button and assings it to the state of the corresponding neuron
                     counter++;
                 }
             }
@@ -141,6 +142,8 @@ namespace SmollBrein
         }
         private void SetConnectionsForAll()
         {
+            //sets the input and output connections for the neurons
+            
             //Rneurons
             Rneurons[1].SetConnections(null, new Neuron[] { V1neurons[1], V1neurons[2] }, 14, 600);
             Rneurons[2].SetConnections(null, new Neuron[] { V1neurons[1], V1neurons[3] }, 56, 600);
